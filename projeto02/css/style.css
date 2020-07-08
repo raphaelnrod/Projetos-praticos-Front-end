@@ -3,3 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #d6d6d6;
+    padding: 10px 0;
+}
+
+.logo1{
+    padding-left: 3%;
+    width: 230px;
+    height: 75px;
+    background-image: url('../img/logo1.png');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo2{
+    padding-right: 3%;
+    width: 230px;
+    height: 75px;
+    background-image: url('../img/logo2.png');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 510px){
+    .header{
+        justify-content: start;
+    }
+}
