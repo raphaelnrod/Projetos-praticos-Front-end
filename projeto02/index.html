@@ -7,6 +7,7 @@
     <meta charset="keywords" content="separado, por, virgulas, as, chaves">
     <meta charset="author" content="Raphael">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <title>Projeto 02</title>
 </head>
 <body>
@@ -16,8 +17,45 @@
                 <div class="logo1"></div>
                 <div class="logo2"></div>
             </div>
-            <!-- <div class="clear"></div> -->
         </div>
     </header>
+    <section class="form-cover">
+        <div class="container bg">
+            <div class="form-container">
+                <h2>
+                    O seu lugar de conexão com a natureza!
+                </h2>
+                <form action="#">
+                    <div class="form-wraper">
+                        <p>Nome completo*</p>
+                        <input type="text" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-wraper">
+                        <p>Email*</p>
+                        <input type="text" name="email" required placeholder="Seu melhor e-mail">
+                    </div>
+                    <div class="form-wraper">
+                        <p>Telefone*</p>
+                        <input type="text" name="telefone" required placeholder="Telefone para contato">
+                    </div>
+                    <div class="form-wraper">
+                        <p>Interesse</p>
+                        <select name="interesse">
+                            <option value="nope" selected disabled>Selecione o tipo de experiência</option>
+                            <option value="Trabalho">Trabalho</option>
+                            <option value="Turismo">Turismo</option>
+                            <option value="Lazer">Lazer</option>
+                            <option value="Descanso">Descanso</option>
+                            <option value="Lua de Mel">Lua de Mel</option>
+                        </select>
+                    </div>
+                    <p class="warning">* Campos obrigatórios</p>
+                    <div class="input-submit">
+                        <input type="submit" name="acao" value="Enviar">                  
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

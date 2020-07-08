@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 html,body{
@@ -25,7 +26,7 @@ html,body{
 
 header{
     background-color: #d6d6d6;
-    padding: 10px 0;
+    padding: 10px 2% 30px 2%;
 }
 
 .logo1{
@@ -48,8 +49,101 @@ header{
     background-position: center;
 }
 
-@media screen and (max-width: 510px){
+section.form-cover{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg{
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+    background-position: center;
+    background-image: url('../img/bg-form.jpg');
+    background-size: cover;
+}
+
+.form-container{
+    text-align: center;
+    margin-right: 35px;
+    width: 400px;
+    height: 110%;
+    transform: translateY(-30px);
+    background-color: rgba(40, 44, 44, 0.65);
+}
+
+.form-container h2{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 35px 15px;
+    color: #dddddd;
+    background-color: rgba(70, 76, 80, 0.95);
+}
+
+.form-container form{
+    text-align: start;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+.form-container form p{
+    font-size: 16px;
+    color: #c9c9c9;
+    margin-bottom: 10px;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 30px;
+}
+
+.form-container form input[type=text], select{
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #e2e2e2d0;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+}
+
+.warning {
+    margin-top: 20px;
+}
+
+form .input-submit{
+    text-align: center;
+}
+
+form input[type=submit]{
+    color: white;
+    margin-top: 20px;
+    border: 0;
+    width: 260px;
+    height: 42px;
+    font-size: 20px;
+    background-color: rgba(70, 76, 80, 0.95);
+    display: inline-block;
+    -webkit-box-shadow: -2px 3px 3px 1px rgba(0,0,0,0.5);
+    box-shadow: -2px 3px 3px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color: rgba(80, 86, 90, 0.95);
+}
+
+@media screen and (max-width: 580px){
     .header{
-        justify-content: start;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bg{
+        justify-content: center;
+    }
+
+    .form-container{
+        margin: 0;
     }
 }
