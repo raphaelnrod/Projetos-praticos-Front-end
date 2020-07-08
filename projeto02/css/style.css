@@ -26,7 +26,7 @@ html,body{
 
 header{
     background-color: #d6d6d6;
-    padding: 10px 2% 30px 2%;
+    padding: 10px 2% 20px 2%;
 }
 
 .logo1{
@@ -67,13 +67,13 @@ section.form-cover{
     text-align: center;
     margin-right: 35px;
     width: 400px;
-    height: 110%;
-    transform: translateY(-30px);
+    height: 107%;
+    transform: translateY(-20px);
     background-color: rgba(40, 44, 44, 0.65);
 }
 
 .form-container h2{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     padding: 35px 15px;
     color: #dddddd;
@@ -115,13 +115,13 @@ form .input-submit{
 }
 
 form input[type=submit]{
-    color: white;
-    margin-top: 20px;
+    color: black;
+    margin-top: 10px;
     border: 0;
     width: 260px;
     height: 42px;
     font-size: 18px;
-    background-color: rgba(70, 76, 80, 0.95);
+    background-color: #e2e2e2d0;
     display: inline-block;
     -webkit-box-shadow: -2px 3px 3px 1px rgba(0,0,0,0.5);
     box-shadow: -2px 3px 3px 1px rgba(0,0,0,0.5);
@@ -130,7 +130,22 @@ form input[type=submit]{
 }
 
 form input[type=submit]:hover{
-    background-color: rgba(80, 86, 90, 0.95);
+    background-color: rgba(184, 184, 184, 0.95);
+}
+
+section.chamada .container{
+    padding: 40px;
+    text-align: center;
+    background-color: #d6d6d6;
+}
+
+section.chamada h2{
+    width: 95%;
+    max-width: 900px;
+    display: inline-block;
+    color: black;
+    font-size: 30px;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 580px){
