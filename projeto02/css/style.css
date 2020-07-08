@@ -120,12 +120,13 @@ form input[type=submit]{
     border: 0;
     width: 260px;
     height: 42px;
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgba(70, 76, 80, 0.95);
     display: inline-block;
     -webkit-box-shadow: -2px 3px 3px 1px rgba(0,0,0,0.5);
     box-shadow: -2px 3px 3px 1px rgba(0,0,0,0.5);
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 form input[type=submit]:hover{
