@@ -11,7 +11,7 @@ html,body{
 
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -130,7 +130,7 @@ form input[type=submit]:hover{
 
 section.chamada .container{
     display: flex;
-    padding: 30px 20px;
+    padding-bottom: 30px;
     text-align: center;
     background-color: #29526d;
     align-items: center;
@@ -159,10 +159,10 @@ section.chamada h4{
 
 section.chamada .container .arrow{
     background-image: url('../img/arrow.png');
-    width: 40px;
-    height: 40px;    
+    width: 60px;
+    height: 60px;    
     background-size: cover;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
 }
 
 .flex-mosaico{
