@@ -20,10 +20,6 @@ html,body{
     justify-content: space-between;
 }
 
-.clear{
-    clear: both;
-}
-
 header{
     background-color: #d6d6d6;
     padding: 10px 2% 20px 2%;
@@ -51,7 +47,6 @@ header{
 
 section.form-cover{
     width: 100%;
-    padding: 0 2%;
 }
 
 .bg{
@@ -118,7 +113,7 @@ form input[type=submit]{
     color: black;
     margin-top: 10px;
     border: 0;
-    width: 260px;
+    width: 70%;
     height: 42px;
     font-size: 18px;
     background-color: #e2e2e2d0;
@@ -134,18 +129,102 @@ form input[type=submit]:hover{
 }
 
 section.chamada .container{
-    padding: 40px;
+    display: flex;
+    padding: 30px 20px;
     text-align: center;
-    background-color: #d6d6d6;
+    background-color: #29526d;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 section.chamada h2{
-    width: 95%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 700px;
     display: inline-block;
-    color: black;
-    font-size: 30px;
+    color: white;
+    font-size: 28px;
     font-weight: normal;
+}
+
+section.chamada h4{
+    margin: 10px 0;
+    width: 100%;
+    max-width: 700px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+section.chamada .container .arrow{
+    background-image: url('../img/arrow.png');
+    width: 40px;
+    height: 40px;    
+    background-size: cover;
+    transform: translateY(-50px);
+}
+
+.flex-mosaico{
+    display: flex;
+    min-height: 280px;
+}
+
+.item-1{
+    background-position: center;
+    background-size: cover;
+    width: 65%;
+}
+
+.item-2{
+    display: flex;
+    color: black;
+    text-align: justify;
+    background-color: rgb(224, 248, 255);
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    width: 35%;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 4px;
+}
+
+@media screen and (max-width: 940px){
+    .bg{
+        justify-content: center;
+    }
+
+    .form-container{
+        max-width: 600px;
+    }
+
+    section.chamada .container .arrow{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1{
+        padding-top: 70%;
+        height: 280px;
+        width: 100%;
+    }
+
+    .item-2{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 580px){
