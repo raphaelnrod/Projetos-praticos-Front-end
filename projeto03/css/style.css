@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.nav-bg{
+    background-color: aquamarine;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);   
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    height: 65vh;
+    padding: 50px 2%;
+    background-image: url('../img/header_bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+header nav{
+    float: right;
+    padding: 10px 5px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+header .logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5px;
+    max-width: 420px;
+    height: 40px;
+}
+
+header .logo h2{
+    font-size: 36px;
+    font-family: 'Righteous', cursive;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+header .logo h2:first-child{
+    padding-left: 10px;
+}
+
+header .bloco-p{
+    display: inline-block;
+    margin-left: 8px;
+    letter-spacing: 1px;
+}
+
+.no-select {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;    
+    -khtml-user-select: none;     
+    -moz-user-select: none;      
+    -ms-user-select: none;        
+    user-select: none;
+}
+
+header .logo p{
+    font-size: 10px;
+    font-family: 'Righteous', cursive;
+    color: aliceblue;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav li:first-child{
+    font-weight: 600;
+}
+
+header nav li{
+    float: left;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+header li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .chamada1{
+    float: right;
+    color: gainsboro;
+    margin: 50px 10px;
+    max-width: 400px;
+}
+
+header .chamada1 h3{
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+header .chamada1 p{
+    padding: 10px;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 628px){
+    header .logo .bloco-p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 548px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .chamada1{
+        float: none;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
