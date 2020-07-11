@@ -46,7 +46,7 @@ header{
     background-size: cover;
 }
 
-header nav{
+header nav.desktop-menu{
     float: right;
     padding: 10px 5px;
     max-width: 500px;
@@ -95,27 +95,66 @@ header .logo p{
     color: aliceblue;
 }
 
-header nav ul{
+header nav.desktop-menu ul{
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-header nav li:first-child{
+header nav.desktop-menu li:first-child{
     font-weight: 600;
 }
 
-header nav li{
+header nav.desktop-menu li{
     float: left;
     padding: 0 15px;
     letter-spacing: 2px;
 }
 
-header li a{
+header nav.desktop-menu li a{
     color: white;
     font-size: 15px;
     text-decoration: none;
     cursor: pointer;
+}
+
+header nav.mobile-menu{
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu-branco.png');
+    background-size: 100% 100%;
+    margin: 8px;
+    cursor: pointer;
+}
+
+header nav.mobile-menu ul{
+    display: none;
+    background-color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90px;
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav.mobile-menu:hover ul{
+    display: block;
+}
+
+header nav.mobile-menu ul li{
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+header nav.mobile-menu ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header nav.mobile-menu ul li:hover{
+    background-color: rgb(230,230,230);
 }
 
 header .container-right .chamada1{
@@ -214,26 +253,9 @@ section .btn1-texto{
 
 
 /* MEDIA QUERYS --- RESPONSIVE PROPERTIES */
-@media screen and (max-width: 682px){
-    header .logo .bloco-p{
-        display: none;
-    }
 
-    .black-out{
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-}
-
-@media screen and (max-width: 598px){
-    header .container-header{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
+@media screen and (max-width: 600px){
+    
     header .chamada1 h3{
         font-size: 28px;
     }
@@ -244,6 +266,14 @@ section .btn1-texto{
 }
 
 @media screen and (max-width: 768px){
+
+    header nav.desktop-menu{
+        display: none;
+    }
+
+    header nav.mobile-menu{
+        display: block;
+    }
 
     .container-right{
         justify-content: center;
