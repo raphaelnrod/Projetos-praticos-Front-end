@@ -250,6 +250,29 @@ section .btn1-texto{
     border-radius: 25px;
 }
 
+section.sessao2{
+    padding: 80px 2%;
+    background-color: white;
+    text-align: center;
+}
+
+section.sessao2 h2{
+    color: #011125;
+    font-weight: 700;
+}
+
+section.sessao2 p{
+    max-width: 1000px;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: left;
+}
+
+section.sessao2 img{
+    width: 70%;
+    margin-top: 40px;
+}
+
 
 
 /* MEDIA QUERYS --- RESPONSIVE PROPERTIES */
@@ -280,13 +303,14 @@ section .btn1-texto{
     }
 
     section.sessao1{
-        padding: 20px 2%;
+        padding: 30px 2%;
         height: auto;
         text-align: center;
     }
 
     .container-device{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -298,6 +322,16 @@ section .btn1-texto{
         display: inline-block;
         width: 100%;
         padding-left: 0;
+    }
+
+    section.texto-sessao2{
+        display: inline;
+        position: relative;
+        max-height: 200px;
+    }
+ 
+    section.sessao2{
+        margin: 30px 5%;
     }
 
     .texto-sessao1 ul{
