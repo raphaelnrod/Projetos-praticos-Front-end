@@ -267,6 +267,9 @@ section.sessao2 p{
 
 section.sessao2 img{
     position: static;
+    -webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.6);
     width: 70%;
     transform: translateY(90px);
 }
@@ -342,10 +345,12 @@ section.sessao3 .title-autor .img-autor{
     float: left;
     width: 45px;
     height: 45px;
-    border-radius: 25px;
+    border-radius: 20px;
     position: relative;
     top: -8px;
-    background-color: gray;
+    background-image: url('../img/avatar.jpeg');
+    background-size: 80% 100%;
+    background-color: transparent;
 }
 
 section.sessao3 .texto-autor{
@@ -474,6 +479,23 @@ section.sessao4 .wraper-parte2 .map{
    border: 2px solid grey;
 }
 
+/* FOOTER COMECA AQUI */
+
+footer{
+    padding: 40px 20px;
+    background: #02070e;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+}
 
 
 /* MEDIA QUERYS --- RESPONSIVE PROPERTIES */
@@ -593,6 +615,19 @@ section.sessao4 .wraper-parte2 .map{
 
     .btn1-texto{
         display: inline-block;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 8px;
     }
 }
 
