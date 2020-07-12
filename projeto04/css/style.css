@@ -15,6 +15,16 @@ html, body{
     margin: 0 auto;
 }
 
+/* TEXTO NAO SELECIONAVEL */
+.no-select {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;    
+    -khtml-user-select: none;     
+    -moz-user-select: none;      
+    -ms-user-select: none;        
+    user-select: none;
+}
+
 .clear{
     clear: both;
 } /* limpar flutuação */
@@ -30,24 +40,41 @@ header .logo img{
     width: 236px;
 }
 
-header nav{
+header nav.menu-desktop{
     float: right;
 }
 
-header nav ul{
+header nav.menu-desktop ul{
     padding: 8px 0;
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     float: left;
     font-size: 15px;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
-header nav ul li a{
+header nav.menu-desktop ul li a{
     text-decoration: none;
     color: #b4b4b4;
+}
+
+header span.menu-icon{
+    display: none;
+    color: #576375;
+    float: right;
+    margin: 0 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+header nav.menu-mobile{
+    display: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    color: #ccc;
 }
 
 /* SESSAO MOSAICO COMEÇA AQUI */
@@ -156,7 +183,6 @@ section.profile-container .img-profile{
     height: 100%;
     background-color: #ccc;
     text-align: center;
-    padding-top: 30%;
 }
 
 section.profile-container .text-profile{
@@ -172,25 +198,64 @@ section.profile-container .text-profile h2{
 section.profile-container .text-profile p{
     font-size: 14px;
     color: #4b4b4b;
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
+/* SESSAO VIDEOS COMEÇA AQUI */
+
+section.videos{
+    padding: 50px 2%;
+}
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    position: relative;
+    border: 5px solid white;
+}
+
+section.videos iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /* MEDIA QUERY RESPONSIVE PROPERTIES */
 
 @media screen and (max-width: 768px){
 
+    /* header nav.menu-mobile{
+        display: block;
+    } */
+
+    header nav.menu-desktop{
+        display: none;
+    }
+    
+    header span.menu-icon{
+        display: block;
+    }
+
+    header span.menu-icon:hover{
+        display: block;
+    }
+
     section.services .container{
-        justify-content: center;
+        flex-direction: column;
         top: -20px;
     }
     
     section.services .container .box-service h2{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     section.services .container .box-service p{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     section.services .container .service-wraper{
@@ -204,45 +269,76 @@ section.profile-container .text-profile p{
         margin-top: 5px;
     }
 
-    section.services .container .service-wraper .box-service:nth-of-type(1){
+    section.services .container .box-service:nth-of-type(1){
         width: 70%;
         max-width: 350px;
-        padding: 10px;
+        padding: 10px 2%;
     }
     
     section.services .container .box-service:nth-of-type(2){
         width: 80%;
         max-width: 380px;
-        padding: 40px;
+        padding: 40px 2%;
     }
     
     section.services .container .box-service:nth-of-type(3){
         width: 70%;
         max-width: 350px;
-        padding: 10px;
+        padding: 10px 2%;
     }
     
-    section.profile-container .profile-wraper2{
-        flex-direction: column;
+    section.profile-container .container .profile-wraper{
+        padding-top: 0;
     }
+
+    section.profile-container .container .profile-wraper .profile-wraper2{
+        height: auto;
+		position: static;
+		text-align: center;
+		display: inline-block;        
+    }    
     
     section.profile-container .img-profile{
         width: 50%;
-        display: inline-block;
         padding-top: 70%;
+        display: inline-block;
         height: auto;
     }
 
+    
     section.profile-container .text-profile{
+        width: 100%;
         display: inline-block;
-        width: 90%;
         text-align: justify;
-        padding: 30px;
+        padding: 20px;
     }
+    
+    section.videos {
+        text-align: center;
+        padding: 0 2%;
+    }
+
+    section.videos .box-video{
+        width: 70%;
+        float: none;
+        display: inline-block;
+        padding-top: calc(100% * 0.6);
+    }
+
 }
 
 @media screen and (max-width: 580px){
+	section.profile-container .img-profile{
+		width: 70%;
+		padding-top:90%;
+    }
+
+    section.videos .box-video{
+        width: 90%;
+        padding-top: calc(100% * 0.6);
+    }
     
+
 }
 
 
