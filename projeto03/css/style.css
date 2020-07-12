@@ -262,7 +262,7 @@ section.sessao2 p{
     max-width: 800px;
     display: inline-block;
     margin-top: 40px;
-    text-align: left;
+    text-align: justify;
 }
 
 section.sessao2 img{
@@ -381,19 +381,24 @@ section.sessao3 .parte2 .slider span:first-child{
 
 /* SESSAO 4 começa aqui */
 
+section.sessao4 .container4{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 section.sessao4{
     background-color: #011125;
     padding: 70px 0;
 }
 
 section.sessao4 .wraper-parte1{
-    width: calc(50%- 30px);
+    width: calc(50% - 30px);
     float: left;
     margin-left: 30px;
 }
 
 section.sessao4 .form{
-    width: calc(50% - 30px);
+    width: 80%;
     float: left;
     color: white;
 }
@@ -425,8 +430,8 @@ section.sessao4 .form form input{
 
 section.sessao4 .form form textarea{
     width: 100%;
-    max-width: 480px;
-    min-width: 210px;
+    max-width: 490px;
+    min-width: 150px;
     height: 160px;
     max-height: 160px;
     min-height: 160px;
@@ -445,6 +450,30 @@ section.sessao4 .form form input[type="submit"]{
     border-radius: 25px;
     border: 0;
 }
+
+section.sessao4 .wraper-parte2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: calc(50% - 30px);
+   color: white; 
+   padding: 60px;
+}
+
+section.sessao4 .wraper-parte2 h2{
+   font-size: 23px;
+   font-weight: 300;
+   margin: 30px 0;
+}
+
+section.sessao4 .wraper-parte2 .map{
+   width: 280px;
+   height: 280px;
+   background-color: white;
+   border: 2px solid grey;
+}
+
 
 
 /* MEDIA QUERYS --- RESPONSIVE PROPERTIES */
@@ -476,6 +505,29 @@ section.sessao4 .form form input[type="submit"]{
 
     section.sessao2 img{
         transform: translateY(35px);
+    }
+
+    section.sessao4 .wraper-parte1{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section.sessao4 .wraper-parte2{
+        width: 100%;
+        padding: 20px;
+    }
+
+    section.sessao4 .form form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.sessao4 .form form:last-child{
+        align-items: center;
     }
 }
 
@@ -542,7 +594,6 @@ section.sessao4 .form form input[type="submit"]{
     .btn1-texto{
         display: inline-block;
     }
-
 }
 
 
