@@ -223,6 +223,127 @@ section.videos iframe{
     height: 100%;
 }
 
+/* SESSAO TRATAMENTOS INICIA AQUI */
+
+section.tratamentos .tratamento-container{
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos .tratamento-single{
+    padding: 20px;
+}
+
+section.tratamentos .tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+section.tratamentos .tratamento-single p{
+    font-size: 13px;
+    font-weight: 200;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+section.tratamentos h2{
+    text-align: center;
+    color: #576375;
+    font-size: 18px;
+}
+
+section.tratamentos .container{
+    padding: 50px 0;
+}
+
+section.tratamentos{
+    padding: 20px 0;
+}
+
+/* SESSAO DEPOIMENTS COMEÇA AQUI */
+section.depoiments h2{
+    text-align: center;
+    color: #576375;
+    font-size: 18px;
+}
+
+section.depoiments .container{
+    padding: 50px 0;
+    max-width: 418px;
+}
+
+section.depoiments .depoiments-single{
+    text-align: center;
+    padding: 0 2%;
+}
+
+section.depoiments .depoiments-single quote{
+    font-size: 15px;
+    color: #4b4b4b;
+}
+
+section.depoiments .name-depoiment{
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.depoiments .name-depoiment .img-depoiment{
+    width: 32px;
+    height: 32px;
+    background-color: #b4b4b4;
+    border-radius: 16px;
+}
+
+section.depoiments .name-depoiment span{
+    display: inline-block;
+    font-size: 15px;
+    color: #b4b4b4;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+/* SESSAO SOCIAL COMEÇA AQUI */
+section.social .instagram{
+    width: 100%;
+    height: 150px;
+    background-color: #576375;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.social .facebook{
+    width: 100%;
+    height: 150px;
+    background-color: #688293;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.social .instagram .social-wraper, section.social .facebook .social-wraper{
+    width: 500px;
+    text-align: center;
+    color: white;
+    padding: 7px 2%;
+}
+
+section.social .instagram .social-wraper h2, section.social .facebook .social-wraper h2{
+    font-size: 14px;    
+    margin: 10px 0;
+}
+
+section.social .instagram .social-wraper p, section.social .facebook .social-wraper p{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+section.social .instagram .social-wraper i, section.social .facebook .social-wraper i{
+    font-size: 35px;
+    cursor: pointer;
+}
 
 
 /* MEDIA QUERY RESPONSIVE PROPERTIES */
