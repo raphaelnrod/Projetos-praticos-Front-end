@@ -345,6 +345,107 @@ section.social .instagram .social-wraper i, section.social .facebook .social-wra
     cursor: pointer;
 }
 
+/* SESSAO CONTATO COMEÇA AQUI */
+section.contact{
+    padding: 60px 2%;
+}
+
+section.contact h2{
+    color: #688293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contact form{
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+section.contact .form-wraper{
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+section.contact .w100{
+    width: 100%;
+}
+
+section.contact .w50{
+    width: 50%;
+}
+
+section.contact .form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+section.contact .form-wraper textarea{
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+    resize: none;
+    margin-top: 10px;
+    border: 1px solid #dadada;
+}
+
+section.contact .form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #dadada;
+    margin: 10px 0;
+}
+
+section.contact .form-wraper input[type=submit]{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* FOOTER COMEÇA AQUI */
+
+footer{
+    padding: 50px 2%;
+    background-color: #688293;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+footer .footer-block h2{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer .footer-block p{
+    margin-top: 10px;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
 
 /* MEDIA QUERY RESPONSIVE PROPERTIES */
 
@@ -446,6 +547,15 @@ section.social .instagram .social-wraper i, section.social .facebook .social-wra
         padding-top: calc(100% * 0.6);
     }
 
+    footer .container-footer{
+        flex-direction: column;
+    }
+
+    footer .footer-block{
+        margin: 20px 0;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 580px){
@@ -459,6 +569,9 @@ section.social .instagram .social-wraper i, section.social .facebook .social-wra
         padding-top: calc(100% * 0.6);
     }
     
+    section.contact .w50{
+        width: 100%;
+    }
 
 }
 
