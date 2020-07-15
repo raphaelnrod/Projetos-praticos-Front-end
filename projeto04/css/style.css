@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+} /* config global */
+
+html, body{
+    height: 100%;
+}
+
+.container{ /* config global de container */
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* TEXTO NAO SELECIONAVEL */
+.no-select {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;    
+    -khtml-user-select: none;     
+    -moz-user-select: none;      
+    -ms-user-select: none;        
+    user-select: none;
+}
+
+.clear{
+    clear: both;
+} /* limpar flutuação */
+
+/* HEADER DO SITE COMEÇA AQUI */
+
+header{
+    padding: 20px 2%;
+}
+
+header .logo img{
+    float: left;
+    width: 236px;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+header nav.menu-desktop ul li a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+header span.menu-icon{
+    display: none;
+    color: #576375;
+    float: right;
+    margin: 0 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+header nav.menu-mobile{
+    display: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    color: #ccc;
+}
+
+/* SESSAO MOSAICO COMEÇA AQUI */
+
+section.mosaic .mosaic-single{
+    float: left;
+    width: calc(100% / 6 - 5px);
+}
+
+section.mosaic .mosaic-wraper{
+    display: flex;
+    justify-content: center;
+}
+
+section.mosaic .img-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+/* SESSAO SERVICES COMEÇA AQUI */
+
+section.services .container{
+    max-width: 800px;
+    display: flex;
+    position: relative;
+    top: -40px;
+}
+
+section.services .container .service-wraper{
+    display: flex;
+    align-items: center;   
+    text-align: center;
+    margin: 0 2%;
+}
+
+section.services .container .box-service h2{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+section.services .container .box-service p{
+    color: rgb(240, 240, 240);
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 18px;
+}
+
+section.services .container .box-service:nth-of-type(1){
+    width: 30%;
+    padding: 20px 2%;
+    background: #576375;
+}
+
+section.services .container .box-service:nth-of-type(2){
+    width: 40%;
+    padding: 80px 2%;
+    background: #688293;
+}
+
+section.services .container .box-service:nth-of-type(3){
+    width: 30%;
+    padding: 20px 2%;
+    background: #576375;
+}
+
+section.services .material-icons{
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* SECTION PROFILE COMEÇA AQUI */
+
+section.profile-container .container{
+    max-width: 800px;
+}
+
+section.profile-container{
+    padding: 30px 2%;
+}
+
+section.profile-container .container .profile-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.profile-container .container .profile-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+section.profile-container .img-profile{
+    width: 40%;
+    height: 100%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+section.profile-container .text-profile{
+    width: 60%;
+    padding: 20px 30px;
+}
+
+section.profile-container .text-profile h2{
+    font-size: 18px;
+    color: #576375;
+}
+
+section.profile-container .text-profile p{
+    font-size: 14px;
+    color: #4b4b4b;
+    margin-top: 10px;
+}
+
+/* SESSAO VIDEOS COMEÇA AQUI */
+
+section.videos{
+    padding: 50px 2%;
+}
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    position: relative;
+    border: 5px solid white;
+}
+
+section.videos iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SESSAO TRATAMENTOS INICIA AQUI */
+
+section.tratamentos .tratamento-container{
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos .tratamento-single{
+    padding: 20px;
+}
+
+section.tratamentos .tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+section.tratamentos .tratamento-single p{
+    font-size: 13px;
+    font-weight: 200;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+section.tratamentos h2{
+    text-align: center;
+    color: #576375;
+    font-size: 18px;
+}
+
+section.tratamentos .container{
+    padding: 50px 0;
+}
+
+section.tratamentos{
+    padding: 20px 0;
+}
+
+/* SESSAO DEPOIMENTS COMEÇA AQUI */
+section.depoiments h2{
+    text-align: center;
+    color: #576375;
+    font-size: 18px;
+}
+
+section.depoiments .container{
+    padding: 50px 0;
+    max-width: 418px;
+}
+
+section.depoiments .depoiments-single{
+    text-align: center;
+    padding: 0 2%;
+}
+
+section.depoiments .depoiments-single quote{
+    font-size: 15px;
+    color: #4b4b4b;
+}
+
+section.depoiments .name-depoiment{
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.depoiments .name-depoiment .img-depoiment{
+    width: 32px;
+    height: 32px;
+    background-color: #b4b4b4;
+    border-radius: 16px;
+}
+
+section.depoiments .name-depoiment span{
+    display: inline-block;
+    font-size: 15px;
+    color: #b4b4b4;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+/* SESSAO SOCIAL COMEÇA AQUI */
+section.social .instagram{
+    width: 100%;
+    height: 150px;
+    background-color: #576375;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.social .facebook{
+    width: 100%;
+    height: 150px;
+    background-color: #688293;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.social .instagram .social-wraper, section.social .facebook .social-wraper{
+    width: 500px;
+    text-align: center;
+    color: white;
+    padding: 7px 2%;
+}
+
+section.social .instagram .social-wraper h2, section.social .facebook .social-wraper h2{
+    font-size: 14px;    
+    margin: 10px 0;
+}
+
+section.social .instagram .social-wraper p, section.social .facebook .social-wraper p{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+section.social .instagram .social-wraper i, section.social .facebook .social-wraper i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* SESSAO CONTATO COMEÇA AQUI */
+section.contact{
+    padding: 60px 2%;
+}
+
+section.contact h2{
+    color: #688293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contact form{
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+section.contact .form-wraper{
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+section.contact .w100{
+    width: 100%;
+}
+
+section.contact .w50{
+    width: 50%;
+}
+
+section.contact .form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+section.contact .form-wraper textarea{
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+    resize: none;
+    margin-top: 10px;
+    border: 1px solid #dadada;
+}
+
+section.contact .form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #dadada;
+    margin: 10px 0;
+}
+
+section.contact .form-wraper input[type=submit]{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* FOOTER COMEÇA AQUI */
+
+footer{
+    padding: 50px 2%;
+    background-color: #688293;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+footer .footer-block h2{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer .footer-block p{
+    margin-top: 10px;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+/* MEDIA QUERY RESPONSIVE PROPERTIES */
+
+@media screen and (max-width: 768px){
+
+    /* header nav.menu-mobile{
+        display: block;
+    } */
+
+    header nav.menu-desktop{
+        display: none;
+    }
+    
+    header span.menu-icon{
+        display: block;
+    }
+
+    header span.menu-icon:hover{
+        display: block;
+    }
+
+    section.services .container{
+        flex-direction: column;
+        top: -20px;
+    }
+    
+    section.services .container .box-service h2{
+        font-size: 13px;
+    }
+
+    section.services .container .box-service p{
+        font-size: 11px;
+    }
+
+    section.services .container .service-wraper{
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    section.services .material-icons{
+        color: white;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    section.services .container .box-service:nth-of-type(1){
+        width: 70%;
+        max-width: 350px;
+        padding: 10px 2%;
+    }
+    
+    section.services .container .box-service:nth-of-type(2){
+        width: 80%;
+        max-width: 380px;
+        padding: 40px 2%;
+    }
+    
+    section.services .container .box-service:nth-of-type(3){
+        width: 70%;
+        max-width: 350px;
+        padding: 10px 2%;
+    }
+    
+    section.profile-container .container .profile-wraper{
+        padding-top: 0;
+    }
+
+    section.profile-container .container .profile-wraper .profile-wraper2{
+        height: auto;
+		position: static;
+		text-align: center;
+		display: inline-block;        
+    }    
+    
+    section.profile-container .img-profile{
+        width: 50%;
+        padding-top: 70%;
+        display: inline-block;
+        height: auto;
+    }
+
+    
+    section.profile-container .text-profile{
+        width: 100%;
+        display: inline-block;
+        text-align: justify;
+        padding: 20px;
+    }
+    
+    section.videos {
+        text-align: center;
+        padding: 0 2%;
+    }
+
+    section.videos .box-video{
+        width: 70%;
+        float: none;
+        display: inline-block;
+        padding-top: calc(100% * 0.6);
+    }
+
+    footer .container-footer{
+        flex-direction: column;
+    }
+
+    footer .footer-block{
+        margin: 20px 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+	section.profile-container .img-profile{
+		width: 70%;
+		padding-top:90%;
+    }
+
+    section.videos .box-video{
+        width: 90%;
+        padding-top: calc(100% * 0.6);
+    }
+    
+    section.contact .w50{
+        width: 100%;
+    }
+
+}
+
+
+

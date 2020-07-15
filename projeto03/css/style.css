@@ -182,6 +182,13 @@ header .chamada1 p{
     text-shadow: 2px 0px 3px rgb(0, 0, 0);
 }
 
+/* SESSAO 1 COMEÇA AQUI */
+
+.container-device{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 section.sessao1{
     width: 100%;
     height: 300px;
@@ -189,18 +196,12 @@ section.sessao1{
     padding: 0 2%;
 }
 
-.container-device{
-    max-width: 1280px;
-    margin: 0 auto;
-    max-height: 300px;
-}
-
 section .texto-sessao1{
     float: left;
     color: white;
     width: 48%;
     margin-left: 2%;
-    margin-top: 30px;
+    margin-top: 20px;
     position: relative;
     left: 60px;
 }
@@ -220,10 +221,6 @@ section .texto-sessao1 li{
     float: left;
     width: 100%;
     margin: 3px;
-}
-
-section .texto-sessao1 li:last-child{    
-    margin-bottom: 10px;
 }
 
 section .device-sessao1{
@@ -250,6 +247,255 @@ section .btn1-texto{
     border-radius: 25px;
 }
 
+section.sessao2{
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+section.sessao2 h2{
+    color: #011125;
+    font-weight: 700;
+}
+
+section.sessao2 p{
+    max-width: 800px;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+section.sessao2 img{
+    position: static;
+    -webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.6);
+    width: 70%;
+    transform: translateY(90px);
+}
+
+/* SESSAO 3 COMEÇA AQUI */
+
+section.sessao3{
+    width: 100%;
+}
+
+section.sessao3 .wraper-parte1{
+    max-width: 500px;
+    float: right;
+    margin-left: 20px;
+}
+
+section.sessao3 .parte1{
+    float: left;
+    color: white;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #10407a;
+}
+
+section.sessao3 .parte1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+section.sessao3 .parte1 p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.sessao3 .parte2{
+    float: left;
+    width: 50%;
+    padding-top: 120px;
+    background: white;
+}
+
+section.sessao3 .sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+section.sessao3 .wraper-title-autor{
+    width: calc(100% -40px);
+    float: left;
+}
+
+section.sessao3 .wraper-title-autor p{
+    font-style: italic;
+    color: #444444;
+    font-weight: 300;
+}
+
+section.sessao3 .title-autor{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+section.sessao3 .title-autor h2{
+    padding-right: 20px;
+    font-size: 23px;
+}
+
+section.sessao3 .title-autor .img-autor{
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    position: relative;
+    top: -8px;
+    background-image: url('../img/avatar.jpeg');
+    background-size: 80% 100%;
+    background-color: transparent;
+}
+
+section.sessao3 .texto-autor{
+    float: left;
+    width: 80%;
+    text-align: justify;
+}
+
+section.sessao3 .texto-autor p{
+    font-size: 15px;
+}
+
+section.sessao3 .parte2 .slider{
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+section.sessao3 .parte2 .slider span{
+    width: 14px;
+    height: 14px;
+    float: left;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(200,200,200);
+    margin-right: 10px;
+}
+
+section.sessao3 .parte2 .slider span:first-child{
+    background-color: #011125;
+}
+
+/* SESSAO 4 começa aqui */
+
+section.sessao4 .container4{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section.sessao4{
+    background-color: #011125;
+    padding: 70px 0;
+}
+
+section.sessao4 .wraper-parte1{
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 30px;
+}
+
+section.sessao4 .form{
+    width: 80%;
+    float: left;
+    color: white;
+}
+
+section.sessao4 .texto-contato{
+    margin: 20px 0;
+    width: 90%;
+}
+
+section.sessao4 .form h2{
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section.sessao4 .form p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 20px;
+}
+
+section.sessao4 .form form input{
+    width: 100%;
+    margin: 5px 0;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+section.sessao4 .form form textarea{
+    width: 100%;
+    max-width: 490px;
+    min-width: 150px;
+    height: 160px;
+    max-height: 160px;
+    min-height: 160px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+section.sessao4 .form form input[type="submit"]{
+    background-color: #115a3b;
+    width: 175px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 0;
+}
+
+section.sessao4 .wraper-parte2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: calc(50% - 30px);
+   color: white; 
+   padding: 60px;
+}
+
+section.sessao4 .wraper-parte2 h2{
+   font-size: 23px;
+   font-weight: 300;
+   margin: 30px 0;
+}
+
+section.sessao4 .wraper-parte2 .map{
+   width: 280px;
+   height: 280px;
+   background-color: white;
+   border: 2px solid grey;
+}
+
+/* FOOTER COMECA AQUI */
+
+footer{
+    padding: 40px 20px;
+    background: #02070e;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+}
 
 
 /* MEDIA QUERYS --- RESPONSIVE PROPERTIES */
@@ -262,6 +508,48 @@ section .btn1-texto{
 
     .black-out{
         background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    section.sessao3 .parte1{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    section.sessao3 .wraper-parte1{
+        float: none;
+        margin-left: 30px;
+    }
+
+    section.sessao3 .parte2{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    section.sessao2 img{
+        transform: translateY(35px);
+    }
+
+    section.sessao4 .wraper-parte1{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section.sessao4 .wraper-parte2{
+        width: 100%;
+        padding: 20px;
+    }
+
+    section.sessao4 .form form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.sessao4 .form form:last-child{
+        align-items: center;
     }
 }
 
@@ -280,13 +568,14 @@ section .btn1-texto{
     }
 
     section.sessao1{
-        padding: 20px 2%;
+        padding: 30px 2%;
         height: auto;
         text-align: center;
     }
 
     .container-device{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -298,6 +587,16 @@ section .btn1-texto{
         display: inline-block;
         width: 100%;
         padding-left: 0;
+    }
+
+    section.texto-sessao2{
+        display: inline;
+        margin: 0 2%;
+        max-height: 200px;
+    }
+ 
+    section.sessao2{
+        margin: 10px 2%;
     }
 
     .texto-sessao1 ul{
@@ -318,6 +617,18 @@ section .btn1-texto{
         display: inline-block;
     }
 
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 8px;
+    }
 }
 
 
