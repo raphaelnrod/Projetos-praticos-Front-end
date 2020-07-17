@@ -79,10 +79,6 @@ header .nav-desktop ul li a{
     color: black;
 }
 
-header .nav-desktop ul li:first-child a{
-    color: #eb2d2d;
-}
-
 header .nav-mobile{
     display: none;
     color: #eb2d2d;
@@ -487,10 +483,6 @@ footer .nav-footer ul li{
 footer .nav-footer ul li a{
     text-decoration: none;    
     color: white;
-}
-
-footer .nav-footer ul li:first-child a{
-    color: #eb2d2d;
 }
 
 footer .direitos{
