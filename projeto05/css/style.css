@@ -34,7 +34,6 @@ html, body{
 
 header{
     padding: 20px 2%;    
-    border-bottom: 1px solid grey;
 }
 
 header .header-wrapper{
@@ -203,6 +202,18 @@ section.destaques h2{
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.line-title h2{
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    background: white;
+    padding: 0 20px;
+    margin-bottom: 40px;
 }
 
 .line{
@@ -216,35 +227,35 @@ section.destaques h2{
 /* SECTION CARS COMEÇA AQUI */
 
 section.cars{
-    padding: 0 2%;
+    padding: 0 2% 100px 2%;
 }
 
 section.cars .cars-wrapper{
     max-width: 900px;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
 }
 
-section.cars .cars-wrapper .img-car{
+.car-single .img-car{
     width: 235px;
     height: 185px;
     background-color: grey;
 }
 
-section.cars .cars-wrapper h2{
+.car-single h2{
     font-size: 18px;
     margin: 20px 0 5px 0;
     font-style: italic;
 }
 
-section.cars .cars-wrapper p{
+.car-single p{
     font-size: 14px;
     margin: 5px 0;
     font-style: italic;
 }
 
-section.cars .cars-wrapper .btn-details{
+.car-single .btn-details{
     width: 120px;
     height: 45px;
     background-color: #eb2d2d;
@@ -362,18 +373,6 @@ section.servicos-descricao .nome-depoimento{
 }
 
 /* SECTION CONTATO COMEÇA AQUI */
-
-section.contato .line-title h2{
-    text-align: center;
-    font-size: 27px;
-    font-style: italic;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    background: white;
-    padding: 0 20px;
-    margin-bottom: 40px;
-}
 
 section.contato{
     padding: 60px 2%;
@@ -572,7 +571,7 @@ footer .direitos p{
         align-items: center;
     }
 
-    section.cars .car-single{
+    .car-single{
         display: flex;
         align-items: center;
         flex-direction: column;

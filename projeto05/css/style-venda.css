@@ -1,0 +1,245 @@
+header{
+    border-bottom: 2px solid #eb2d2d; 
+}
+
+section.venda{
+    min-height: 90%;
+    padding: 0 2%;
+}
+
+section.venda .title-wrapper{
+    padding-top: 50px;
+}
+
+section.venda .content-venda{
+    margin-top: 20px;
+}
+
+.sidebar{
+    float: left;
+    width: 18%;
+    padding: 0 2%;
+}
+
+.search1, .search2{
+    width: 100%;
+    padding-right: 2%;
+}
+
+.search1 h2, .search2 h2{
+    font-size: 17px;
+    color: black;
+    font-weight: normal;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 15px;
+    margin-top: 8px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.preco-fill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.pointer-barra{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -3px;
+    background: linear-gradient(to bottom, rgb(220, 220, 220), rgb(160, 160, 160));
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+    font-size: 12px;
+    color: black;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 30px;
+}
+
+.search2 form{
+    margin-top: 10px;
+}
+
+.form-venda-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.form-venda-wrapper input[type=checkbox]{
+    display: none;
+}
+
+.form-venda-wrapper label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wrapper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(100, 100, 100);
+    position: absolute;
+    left: calc(50% - 4px);
+    top: calc(50% - 4px);
+}
+
+.vitrine-venda{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: fill;
+    padding: 0 40px;
+}
+
+.vitrine-venda .car-single{
+    padding: 0 30px 30px 0;
+}
+
+.car-single{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.car-single .img-car{
+    width: 100%;
+    height: 190px;
+}
+
+@media screen and (max-width: 1120px){
+    .vitrine-venda{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .search1 h2, .search2 h2{
+        font-size: 13px;
+        color: black;
+        font-weight: normal;
+    }
+
+    .form-venda-wrapper label{
+        width: 14px;
+        height: 14px;
+    }
+
+    .circle{
+        width: 6px;
+        height: 6px;
+        left: calc(50% - 3px);
+        top: calc(50% - 3px);
+    }
+
+    .form-venda-wrapper{
+        font-size: 12px;
+    }
+
+    .search1 .barra-preco{
+        width: 100%;
+        height: 12px;
+        border-radius: 12px;
+    }
+    
+    .preco-fill{
+        height: 12px;
+        border-radius: 12px;
+    }
+    
+    .pointer-barra{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .valor-pesquisa{
+        margin-top: 8px;
+        font-size: 12px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 968px){
+    .vitrine-venda{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .vitrine-venda{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .sidebar{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .vitrine-venda .car-single{
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .search1, .search2{
+        width: 100%;
+        float: none;
+        display: inline-block;
+        padding: 0;
+        padding: 0 5%;
+    }
+
+    .car-single .img-car{
+        width: 70%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .car-single .img-car{
+        width: 80%;
+        height: 180px;
+    }
+}
